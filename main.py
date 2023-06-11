@@ -212,25 +212,22 @@ def Download_audio():
 
     messagebox.showinfo("SUCCESSFULLY", "DOWNLOADED AND SAVED IN\n" + download_Folder)
 
-# Creating object of tk class
+
 root = tk.Tk()
 
-# Setting the title, background color
-# and size of the tkinter window and
-# disabling the resizing property
+
 root.geometry("600x400")
 root.resizable(True, True)
 root.title("YouTube Video And Audio Downloader")
 root.config(background="gray")
 
-# Creating the tkinter Variables
+
 video_Link = StringVar()
 download_Path = StringVar()
 video_res = StringVar()
 
-# Calling the Widgets() function
+
 Widgets()
 
-# Defining infinite loop to run
-# application
+
 root.mainloop()
